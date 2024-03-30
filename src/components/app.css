@@ -1,18 +1,22 @@
-navbar {
+nav {
   display: flex;
   background-color: black;
   color: white;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
 }
-navbar ul {
+nav ul {
   display: flex;
   padding: 0 20px;
 }
-navbar ul li {
+nav ul li {
   padding: 0 20px;
   list-style: none;
+  font-size: 20px;
 }
 span {
   margin-right: 50px;
@@ -35,6 +39,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+  margin-top: 100px;
 }
 .price-cat {
   display: flex;
@@ -62,8 +67,8 @@ button {
 }
 input {
   width: 40%;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border-radius: 5px;
-
+  font-size: 20px;
   border: 2px solid orange;
 }

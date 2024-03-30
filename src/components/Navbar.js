@@ -9,7 +9,7 @@ const Navbar = () => {
     dispatch({ type: "FILTER", payload: e.target.value });
   };
   return (
-    <navbar>
+    <nav>
       <ul>
         <li>Home</li>
         <li>About us</li>
@@ -23,7 +23,7 @@ const Navbar = () => {
       <span>
         Cart: Items:{totalProducts} Price:{totalPrice}
       </span>
-    </navbar>
+    </nav>
   );
 };
 
