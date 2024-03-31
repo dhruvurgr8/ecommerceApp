@@ -1,6 +1,7 @@
 import React from "react";
 import "./app.css";
 import { useDispatch, useSelector } from "react-redux";
+
 const Navbar = () => {
   const dispatch = useDispatch();
   const totalProducts = useSelector((state) => state.y.products);

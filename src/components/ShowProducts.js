@@ -43,9 +43,9 @@ const ShowProducts = ({ data }) => {
         ) : (
           <div>
             <span className="btn-count">
-              <button onClick={increment}>+</button>
-              {count}
               <button onClick={decrement}>-</button>
+              {count}
+              <button onClick={increment}>+</button>
             </span>
           </div>
         )}
