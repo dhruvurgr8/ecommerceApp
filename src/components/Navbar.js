@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./app.css";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -9,6 +9,9 @@ const Navbar = () => {
   const handleChange = (e) => {
     dispatch({ type: "FILTER", payload: e.target.value });
   };
+
+  const sidebarRef = useRef(null);
+
   return (
     <nav>
       <ul>
@@ -21,7 +24,7 @@ const Navbar = () => {
         type="text"
         placeholder="Search any Products here"
       />
-      <span>
+      <span className="cart">
         Cart: Items:{totalProducts} Price:{totalPrice}
       </span>
     </nav>
@@ -29,3 +32,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// This is the final code

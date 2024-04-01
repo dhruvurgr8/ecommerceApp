@@ -18,57 +18,6 @@ nav ul li {
   list-style: none;
   font-size: 20px;
 }
-span {
-  margin-right: 50px;
-  padding: 10px 30px;
-  background-color: green;
-}
-img {
-  padding: 10px;
-  margin: 0 auto 0 auto;
-}
-.content-wrapper {
-  border: 1px solid black;
-  width: 25%;
-  padding: 10px;
-  margin: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
-  margin-top: 100px;
-}
-.price-cat {
-  display: flex;
-  justify-content: space-between;
-}
-.btn-cart {
-  background-color: green;
-  color: white;
-  padding: 10px 30px;
-  border: none;
-  font-weight: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-button {
-  cursor: pointer;
-}
-.btn-div {
-  background-color: green;
-  max-width: 50px;
-}
-.btn-count {
-  display: flex;
-  justify-content: space-around;
-}
-input {
-  width: 40%;
-  padding: 10px 10px;
-  border-radius: 5px;
-  font-size: 20px;
-  border: 2px solid orange;
+.cart {
+  width: auto;
 }

@@ -1,0 +1,43 @@
+.sidebar {
+  width: 450px;
+  height: 740px; /* Set height to a specific value */
+  border: 2px solid black;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  overflow: scroll;
+  margin-top: 70px;
+}
+
+.side-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e7e7e7;
+  margin: 0 0 0 10px;
+}
+
+.content {
+  padding: 30px 10px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: green; /* Consider using a more specific class name */
+  color: white; /* Consider using a more specific class name */
+  padding: 2px 5px;
+  margin-bottom: 10px;
+}
+.close-sidebar {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

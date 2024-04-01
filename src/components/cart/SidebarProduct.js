@@ -1,37 +1,40 @@
-import { useState } from "react";
+import React from "react";
+import "./sidebar.css";
 import { useDispatch } from "react-redux";
-import { cartActions } from "./actions";
-
-export const SidebarProduct = ({ product }) => {
-  // const [count, setCount] = useState(10);
+const SidebarProduct = ({ product }) => {
   const dispatch = useDispatch();
-
   const increment = () => {
     dispatch({
-      type: cartActions.INC_QTY,
+      type: "INC",
       payload: { id: product.id, price: product.price },
     });
   };
-
   const decrement = () => {
     dispatch({
-      type: cartActions.DEC_QTY,
+      type: "DEC",
       payload: { id: product.id, price: product.price },
     });
   };
-
   return (
-    <div className="product">
-      <img src={product.image} />
-      <div className="title-box">
-        <span>{product.title}</span>
-        <b>₹{product.price}</b>
+    <>
+      <div className="side-wrapper">
+        <div>
+          <img width={100} height={100} src={product.image} />
+        </div>
+        <div className="content">
+          <p>
+            <b>{product.title}</b>
+          </p>
+          <p>Price:{product.price}</p>
+        </div>
+        <div className="btn-group">
+          <button onClick={decrement}>-</button>
+          <p>{product.quantity}</p>
+          <button onClick={increment}>+</button>
+        </div>
       </div>
-      <div className="btn-group">
-        <button onClick={decrement}>-</button>
-        <span>{product.quantity}</span>
-        <button onClick={increment}>+</button>
-      </div>
-    </div>
+    </>
   );
 };
+
+export default SidebarProduct;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-
+import "./showproduct.css";
 const ShowProducts = ({ data }) => {
   const [count, setCount] = useState(0);
   const dispatch = useDispatch();
